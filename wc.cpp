@@ -41,9 +41,9 @@ Twc calc(char* filename)
     	_getch();
     	exit(0);
     }
-//    char ch,lastch;
-//    lastch=0;
-//    int char_num=0;
+    char ch,lastch;
+    lastch=0;
+    int char_num=0;
     int bufsize=105;
     char st[bufsize];
     while(!feof(fp))
