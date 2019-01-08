@@ -46,8 +46,10 @@ Twc calc(char* filename)
     int char_num=0;
     int bufsize=105;
     char st[bufsize];
-    while(!feof(fp))
+           
+    while(!feof(fp))                       
     {
+    	//遍历文件的每一行，统计行数，字符数和词数
     	fgets(st,bufsize,fp);
     	res.line++;
     	int len=strlen(st);    	
@@ -199,3 +201,4 @@ int main(int argc, char * argv[])
 	
 	return 0;
 }
+
